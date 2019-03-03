@@ -23,7 +23,7 @@ class App extends React.Component {
    
  }
  componentWillUpdate(){
-   
+
  }
  
   
@@ -33,8 +33,10 @@ class App extends React.Component {
     return (
       <div>
         <Header name="Hiep" />
-        <Content />
-        <button onClick={()=>{this.setState({lst : [{'Code':0, "Name" : Hiep},{'Code':1 ,"Name" : Nam}]})}}> </button>
+        <Content  name ="Hiep" />
+        <button onClick={()=>{this.setState({lst : [{'Code':0, "Name" : "Hiep"},{'Code':1 ,"Name" : "Nam"}]})}}> 
+        Insert
+        </button>
        
       </div>);
   }
